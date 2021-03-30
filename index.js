@@ -74,6 +74,7 @@ app.use(session({
     saveUninitialized: false,
     store
 }));
+
 app.use(fileMiddleware.single('avatar'))
 app.use(csrf())
 app.use(flash());
